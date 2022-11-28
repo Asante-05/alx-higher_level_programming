@@ -6,15 +6,20 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *head;
-	int n = 0;
+	listint_t *head, *tail;
+
+	if (list == NULL)
+		return (0);
 
 	head = list;
-	while (list != NULL)
+	tail = list;
+
+	while(tail != NULL && tail->next != NULL)
 	{
-		list = list->next;
-		if (head == list)
-			n = 1;
+		head = head->next;
+		tail = tail->next->next;
+
+		if (head == tail)
+			return (1);
 	}
-	return (n);
 }
