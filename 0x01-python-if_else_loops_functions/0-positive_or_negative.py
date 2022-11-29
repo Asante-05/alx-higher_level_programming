@@ -7,4 +7,4 @@ elif number < 0:
 	string = "is negative"
 else:
 	string = "is zero"
-	print(f"{number} {string}")
+print(f"{number} {string}")
