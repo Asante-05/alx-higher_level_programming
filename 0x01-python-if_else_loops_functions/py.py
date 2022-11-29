@@ -2,8 +2,10 @@
 import random
 number = random.randint(-10, 10)
 if number < 0:
-	print(f"{number:d} is negavtive")
+	string = "is negavtive"
 elif number > 0:
-	print(f"{number:d} is positive")
+	string = "is positive"
 else:
-	print(f"{numbe:d} is zero")
+	string = "is zero"
+print(f"{number:d} {string:s}")
+
