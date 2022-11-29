@@ -7,5 +7,5 @@ elif number > 0:
 	string = "is positive"
 else:
 	string = "is zero"
-print(f"{number} {string}\n")
+print(f"{number:d} {string:s}")
 
