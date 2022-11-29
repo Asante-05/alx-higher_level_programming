@@ -22,4 +22,5 @@ int check_cycle(listint_t *list)
 		if (head == tail)
 			return (1);
 	}
+	return (0);
 }
