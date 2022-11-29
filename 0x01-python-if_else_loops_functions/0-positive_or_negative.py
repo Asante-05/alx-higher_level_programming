@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 import random
 number = random.randint(-10, 10)
 if number > 0:
@@ -7,5 +7,4 @@ elif number < 0:
 	string = "is negative"
 else:
 	string = "is zero"
-print(f"{number} {string}")
-
+	print(f"{number} {string}")
