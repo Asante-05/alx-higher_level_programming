@@ -62,14 +62,14 @@ class Node:
 
 class SinglyLinkedList:
     """ Defines a Singly linked list """
-    def __init__(self):
+    def __init__(self) -> None:
         """ initializing of node
         Args:
             self: object
         """
         self.__head = None
 
-    def __str__(self):
+    def __str__(self) -> str:
         """ setting up the linked list
         Args:
             Self: object
