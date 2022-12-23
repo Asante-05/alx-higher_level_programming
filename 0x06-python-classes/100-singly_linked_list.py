@@ -24,7 +24,7 @@ class Node:
         Args:
             Self: object
         Returns: data
-		"""
+        """
         return self.__data
 
     @data.setter
@@ -84,8 +84,8 @@ class SinglyLinkedList:
 
     def sorted_insert(self, value):
         """ Function to insert into linked like
-			sorted
-		Args:
+            sorted
+        Args:
             Self: Object
         Returns: None
         """
