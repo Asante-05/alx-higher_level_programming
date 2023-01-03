@@ -62,7 +62,7 @@ class Rectangle:
             x = self.__width * '#' + '\n'
             y = ""
             for i in range(self.__height):
-                if i == self.height -1:
+                if i == self.height - 1:
                     y += self.__width * '#'
                 else:
                     y += x
