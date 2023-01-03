@@ -2,5 +2,6 @@
 """ module for empty class
 """
 
+
 class Rectangle:
     pass
