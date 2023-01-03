@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ module for rectangle class
-execute: ./2-main.py
+execute: ./3-main.py
 """
 
 
