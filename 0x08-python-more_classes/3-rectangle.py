@@ -62,7 +62,10 @@ class Rectangle:
             x = self.__width * '#' + '\n'
             y = ""
             for i in range(self.__height):
-                y += x
+                if i == self.height -1:
+                    y += self.__width * '#'
+                else:
+                    y += x
             return y
         else:
             return ("")
