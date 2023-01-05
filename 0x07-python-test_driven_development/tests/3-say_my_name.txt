@@ -13,7 +13,7 @@ My name is John Mensah
 
 :: passing only one string
 >>> say_my_name("Asamoah")
-My name is Asamoah
+My name is Asamoah 
 
 :: passing a boolean and a string
 >>> say_my_name(False, "Prophet")
