@@ -29,7 +29,7 @@ Using ``add_integer``
 180
 
 :: subtracting 1 from 98
->>> add_integer(-1):
+>>> add_integer(-1)
 97
 
 :: calling function with no arguments
