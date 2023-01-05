@@ -1,30 +1,64 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+
+:: importing function from module
 >>> add_integer = __import__('0-add_integer').add_integer
 
+:: adding two positive integers
 >>> add_integer(2, 9)
 11
 
+:: passing only one argument
 >>> add_integer(90)
 188
 
+:: adding two zeros
 >>> add_integer(0, 0)
 0
 
+:: adding two negative numbers
 >>> add_integer(-2, -2)
 -4
 
+:: adding a float and an integer
 >>> add_integer(90.5, 90)
 180
 
+:: calling function with no arguments
 >>> add_integer()
 Traceback (most recent call last):
 TypeError: add_integer() missing 1 required positional argument: 'a'
 
+:: adding a char and an integer
 >>> add_integer('a', 90)
 Traceback (most recent call last):
 TypeError: a must be an integer
 
+:: adding an integer and a char
 >>> add_integer(90, 'c')
 Traceback (most recent call last):
 TypeError: b must be an integer
 
 
+:: adding a string and an integer
+>>> add_integer("string", 8)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+:: adding a float and a negative number
+>>> add_integer(100.3, -2)
+98
+
+:: adding two string numbers
+>>> add_integer('90', '9')
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+:: adding a number and an empty list
+>>> add_integer(90, [])
+Traceback (most recent call last):
+TypeError: b must be an integer
