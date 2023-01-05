@@ -62,3 +62,22 @@ TypeError: a must be an integer
 >>> add_integer(90, [])
 Traceback (most recent call last):
 TypeError: b must be an integer
+
+Adding two float numbers
+>>> add_integer(2.9, 2.9)
+4
+
+Case Overflow:
+>>> add_integer(float('inf'), 0)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+Case Overflow 2:
+>>> add_integer(float('inf'), float('-inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+Case NaN:
+>>> add_integer(0, float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
