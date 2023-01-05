@@ -16,6 +16,14 @@ Using ``add_integer``
 >>> add_integer(90)
 188
 
+:: adding a positive and a negative 
+>>> add_integer(66, -2)
+64
+
+:: passing only a float 
+>>> add_integer(2.8)
+100
+
 :: adding two zeros
 >>> add_integer(0, 0)
 0
