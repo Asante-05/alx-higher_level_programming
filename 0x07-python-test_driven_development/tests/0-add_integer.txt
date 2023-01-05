@@ -40,6 +40,11 @@ Using ``add_integer``
 >>> add_integer(-1)
 97
 
+:: passing a tuple
+>>> add_integer((2, 4))
+Traceback (most recent call last):
+TypeError: a must be an integer
+
 :: calling function with no arguments
 >>> add_integer()
 Traceback (most recent call last):
