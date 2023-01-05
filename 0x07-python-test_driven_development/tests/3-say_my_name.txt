@@ -9,11 +9,11 @@ Using ``say_my_name``
 
 :: passing first and last name (strings)
 >>> say_my_name("John", "Mensah")
-John Mensah
+My name is John Mensah
 
 :: passing only one string
 >>> say_my_name("Asamoah")
-Asamoah 
+My name is Asamoah
 
 :: passing a boolean and a string
 >>> say_my_name(False, "Prophet")
