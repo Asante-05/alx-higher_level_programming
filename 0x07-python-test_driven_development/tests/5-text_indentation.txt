@@ -1,17 +1,64 @@
+The ``5-text_indentation`` module
+============================
+
+Using ``text_indentation``
+---------------------
+
+:: importing function from module
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
+:: passing a number to the function
 >>> text_indentation(8)
 Traceback (most recent call last):
 TypeError: text must be a string
 
+:: passing a string to the function
 >>> text_indentation("why are you here?")
 why are you here?
 <BLANKLINE>
 
+:: passing a boolean the boolean
 >>> text_indentation(True)
 Traceback (most recent call last):
 TypeError: text must be a string
 
+:: passing a list to the function
 >>> text_indentation([1, '2', 'String', True])
 Traceback (most recent call last):
 TypeError: text must be a string
+
+:: Printing all special characters
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+
+:: passing None to the function 
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+:: passing a text with spaces and one new line
+>>> text_indentation("   \n")
+<BLANKLINE>
+
+
+
+
+:: passing a text with spaces and one new line 2
+>>> text_indentation("   \n   ")
+<BLANKLINE>
+<BLANKLINE>
+
+:: passing a text with spaces and one new line 3
+>>> text_indentation("\n   ")
+<BLANKLINE>
+<BLANKLINE>
+
+:: calling the function without arguments
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
