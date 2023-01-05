@@ -28,6 +28,10 @@ Using ``add_integer``
 >>> add_integer(90.5, 90)
 180
 
+:: subtracting 1 from 98
+>>> add_integer(-1):
+97
+
 :: calling function with no arguments
 >>> add_integer()
 Traceback (most recent call last):
