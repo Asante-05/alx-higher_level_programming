@@ -1,0 +1,49 @@
+param m_a: The first matrix
+:type m_a: list
+:param m_b: The second matrix
+:type m_b: list
+:return: The product of the two matrices
+:type: list
+
+
+>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[5, 6], [7, 8]])
+array([[19, 22],
+       [43, 50]])
+
+>>> lazy_matrix_mul([[1, 2, 3], [4, 5, 6]], [[7, 8], [9, 10], [11, 12]])
+array([[58, 64],
+		      [139, 154]])
+
+>>> lazy_matrix_mul([[1, 2]], [[3], [4]])
+array([[11]])
+
+>>> lazy_matrix_mul([[1, 2, 3], [4, 5, 6]], [[7, 8, 9, 10], [11, 12, 13, 14], [15, 16, 17, 18]])
+array([[74,80,86,92],
+		[173,188,203,218]])
+
+>>> lazy_matrix_mul([[1, 2, 3], [4, 5, 6]], [[11, 12, 13, 14], [15, 16, 17, 18]])
+Traceback (most recent call last):
+
+
+>>> lazy_matrix_mul(90 , [[5, 6], [7, 8]])
+Traceback (most recent call last):
+TypeError: m_a must be a matrix
+
+>>> lazy_matrix_mul([], [[7, 8], [9, 10]])
+Traceback (most recent call last):
+TypeError: m_a must be a matrix
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[], [7, 8]])
+Traceback (most recent call last):
+TypeError: m_b must be a matrix
+
+>>> lazy_matrix_mul([[1, 2, 3], [4, 5, 6]], [[7, 8], ['a', 10], [11, 12]])
+Traceback (most recent call last):
+TypeError: m_b must be a matrix
+
+>>> lazy_matrix_mul([[1, 2, 3, 7], [4, 5, 6]], [[7, 8], [3, 10], [11, 12]])
+Traceback (most recent call last):
+TypeError: m_a must me a matrix

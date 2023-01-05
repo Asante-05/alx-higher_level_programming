@@ -1,0 +1,17 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation(8)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation("why are you here?")
+why are you here?
+<BLANKLINE>
+
+>>> text_indentation(True)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation([1, '2', 'String', True])
+Traceback (most recent call last):
+TypeError: text must be a string
