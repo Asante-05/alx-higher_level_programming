@@ -56,9 +56,9 @@ Traceback (most recent call last):
 TypeError: a must be an integer
 
 :: adding an integer and a char
->>> add_integer(90, 'c')
+>>> add_integer('90', 'c')
 Traceback (most recent call last):
-TypeError: b must be an integer
+TypeError: a must be an integer
 
 :: pasing only a string
 >>> add_integer("string")
