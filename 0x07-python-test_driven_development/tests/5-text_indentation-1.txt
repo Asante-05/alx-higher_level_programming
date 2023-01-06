@@ -28,16 +28,27 @@ Teneo, inquit, finem illi videri nihil dolere.
 <BLANKLINE>
 
 
-:: Printing a word with spaces around
->>> text_indentation("    Holberton    ")
-Holberton    
+:: passing a number to the function
+>>> text_indentation(8)
+Traceback (most recent call last):
+TypeError: text must be a string
 
-:: Printing a word with a special character at the end
->>> text_indentation("    Hello   .")
-Hello   .
+:: passing a string to the function
+>>> text_indentation("why are you here?")
+why are you here?
 <BLANKLINE>
 
-:: Printing all special characters					   
+:: passing a boolean the boolean
+>>> text_indentation(True)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+:: passing a list to the function
+>>> text_indentation([1, '2', 'String', True])
+Traceback (most recent call last):
+TypeError: text must be a string
+
+:: Printing all special characters
 >>> text_indentation(".?:")
 .
 <BLANKLINE>
@@ -46,61 +57,40 @@ Hello   .
 :
 <BLANKLINE>
 
-:: Passing Node as a text
+:: passing None to the function 
 >>> text_indentation(None)
 Traceback (most recent call last):
 TypeError: text must be a string
 
-:: Passing a number as a text
->>> text_indentation(10)
-Traceback (most recent call last):
-TypeError: text must be a string
-
-:: Printing a text with special characters
->>> text_indentation("Betty: Holberton? Python is. cool  ")	
-Betty:
-<BLANKLINE>
-Holberton?
-<BLANKLINE>
-Python is.
-<BLANKLINE>
-cool  
-
-
-:: Printing a char number
->>> text_indentation('2')
-2
-
-:: Passing an empty string
->>> text_indentation('    ')
-
-
-:: Passing a new line as a text
->>> text_indentation('\n')													      
-<BLANKLINE>
-
-:: Passing a special character and some special characters
->>> text_indentation('\n.\n?\n:')
-<BLANKLINE>	
-.
-<BLANKLINE>
-<BLANKLINE>
-?
-<BLANKLINE>
-<BLANKLINE>
-:
-<BLANKLINE>
-
-:: Passing a text with spaces and one new line
+:: passing a text with spaces and one new line
 >>> text_indentation("   \n")
 <BLANKLINE>
 
-:: Passing a text with spaces and one new line 2
+
+
+
+:: passing a text with spaces and one new line 2
 >>> text_indentation("   \n   ")
 <BLANKLINE>
 <BLANKLINE>
 
-:: Passing a text with spaces and one new line 3
+:: passing a text with spaces and one new line 3
 >>> text_indentation("\n   ")
 <BLANKLINE>
 <BLANKLINE>
+
+:: calling the function without arguments
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+:: calling function with space
+>>> text_indentation("    School   .")
+School   .
+<BLANKLINE>
+
+:: passing an empty string
+>>> text_indentation('   ')
+
+
+
