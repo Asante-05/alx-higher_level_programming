@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ non empty class
-execute: ./6-main.py
+execute: ./7-main.py
 """
 
 
@@ -9,4 +9,4 @@ class BaseGeometry:
 
     def area(self):
         """ raise an exception """
-        raise Exception("area() is not implemented")
+        raise Exception("area() is not implemented")    
