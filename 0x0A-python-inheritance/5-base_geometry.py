@@ -5,4 +5,5 @@ execute: ./5-main.py
 
 
 class BaseGeometry:
+	""" empty class """
     pass
