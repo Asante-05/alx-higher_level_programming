@@ -12,7 +12,6 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-
     """ method to return dict representation of class instance """
     def to_json(self):
         return self.__dict__
