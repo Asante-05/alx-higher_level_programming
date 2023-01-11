@@ -5,7 +5,7 @@ execute: ./8-main.py
 
 
 def class_to_json(obj):
-    """ defines a class to function 
+    """ defines a class to function
     Args:
         obj(class): onject to be defined
     Returns: __dict__ for obj
