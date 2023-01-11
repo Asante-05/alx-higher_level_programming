@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ module adds all arguments to a python ist and saves it to a file
-execute: ./7-main.py
+execute: ./7-add_item.py
 """
 
 
