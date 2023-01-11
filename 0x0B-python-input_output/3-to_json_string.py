@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-import json
 """ module containg json encoder
 execute: ./3-main.oy
 """
+
+
+import json
 
 
 def to_json_string(my_obj):
