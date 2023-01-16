@@ -70,9 +70,9 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """ fucntion to return the dictionary representation
-            of t the class instance
+            of the class instance
         """
         return {'id': getattr(self, "id"),
+                'size': getattr(self, "width"),
                 'x': getattr(self, "x"),
-                'size': getattr(self, "size"),
                 'y': getattr(self, "y")}
