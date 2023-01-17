@@ -79,7 +79,7 @@ class Rectangle(Base):
         if type(width) != int:
             raise TypeError("width must be an integer")
         if width <= 0:
-            raise ValueError("with must be > 0")
+            raise ValueError("width must be > 0")
         self.__width = width
 
         if type(height) != int:
@@ -91,7 +91,7 @@ class Rectangle(Base):
         if type(x) != int:
             raise TypeError("x must be an integer")
         if x < 0:
-            raise ValueError("x must be >=0")
+            raise ValueError("x must be >= 0")
         self.__x = x
 
         if type(y) != int:
